@@ -1,0 +1,279 @@
+:root {
+    --Purple50: hsl(260, 100%, 95%);
+    --Purple300: hsl(264, 82%, 80%);
+    --Purple500: hsl(263, 100%, 16%);
+    --White: hsl(0, 0%, 100%);
+    --Grey100: hsl(214, 17%, 92%);
+    --Grey200: hsl(0, 0%, 81%);
+    --Grey400: hsl(224, 10%, 45%);
+    --Grey500: hsl(217, 19%, 35%);
+    --Darkblue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+    --Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    --Weights: 500, 600;
+    }
+    
+    body {
+    Font size: 13px;
+    background-color: var(--Purple50);
+    }
+    
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        font-family: var(--Family);
+        }
+        
+    .Daniel { grid-area: 1 / 1 / 3 / 4; }
+    .Jonathan { grid-area: 1 / 4 / 3 / 5; }
+    .Jeanette { grid-area: 3 / 1 / 5 / 2; }
+    .Patrick { grid-area: 3 / 2 / 5 / 5; }
+    .Kira { grid-area: 1 / 5 / 5 / 6; }
+    
+    .Daniel {
+        background-color: var(--Purple500);
+        background-image: url("bg-pattern-quotation.svg");
+        background-size: 100px;
+        opacity: 0.8;
+        border-radius: 10px;
+        padding: 20px;
+        background-repeat: no-repeat;
+        background-position: right 120px top 0px;
+        box-shadow: 10px 5px 5px var(--Grey200);
+        font-family: "Barlow Semi Condensed";
+        font-weight: 600;
+    
+    }
+    .Jonathan {
+        background-color: var(--Grey500);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Barlow Semi Condensed";
+        font-weight: 600;
+    }
+    .Jeanette {
+        background-color: var(--White);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Barlow Semi Condensed";
+        font-weight: 600;
+    }
+    .Patrick {
+        background-color: var(--Darkblue);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Barlow Semi Condensed";
+        font-weight: 600;
+    }
+    .Kira {
+        background-color: var(--White);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Barlow Semi Condensed";
+        font-weight: 600;
+    }
+    
+    .icon_daniel {
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    }
+    .avatar_daniel {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .info_daniel {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_daniel > h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--White);
+    }
+    .subtitle_daniel {
+        margin: 0;
+        font-size: 14px;
+        color: var(--Grey200);
+        font-weight: bold;
+        margin-top: 7px;
+    }
+    .title_daniel {
+        color: var(--White);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .description_daniel {
+        color: var(--Grey200);
+        opacity: 0.4;
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    
+    .icon_jonathan {
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    }
+    .avatar_jonathan {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .info_jonathan {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_jonathan > h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--White);
+    }
+    .subtitle_jonathan {
+        margin: 0;
+        font-size: 14px;
+        color: var(--Grey200);
+        font-weight: bold;
+        margin-top: 7px;
+    }
+    .title_jonathan {
+        color: var(--White);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .description_jonathan {
+        color: var(--Grey200);
+        opacity: 0.8;
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    .icon_jeanette {
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    }
+    .avatar_jeanette {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .info_jeanette {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_jeanette > h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--Grey500);
+    }
+    .subtitle_jeanette {
+        margin: 0;
+        font-size: 14px;
+        color: var(--Grey200);
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .title_jeanette {
+        color: var(--Darkblue);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .description_jeanette {
+        color: var(--Grey400);
+        font-size: 24px;
+    }
+    
+    .icon_patrick {
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    }
+    .avatar_patrick {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .info_patrick {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_patrick > h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--White);
+    }
+    .subtitle_patrick {
+        margin: 0;
+        font-size: 14px;
+        color: var(--Grey200);
+        font-weight: bold;
+        margin-top: 7px;
+    }
+    .title_patrick {
+        color: var(--White);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .description_patrick {
+        margin-top: 5px;
+        color: var(--Grey200);
+        opacity: 0.8;
+        font-size: 24px;
+    }
+    .icon_kira {
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    }
+    .avatar_kira {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .info_kira {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_kira > h3 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: var (--Darkblue);
+    }
+    .subtitle_kira {
+        margin: 0;
+        font-size: 14px;
+        color: var(--Grey200);
+        font-weight: bold;
+        margin-top: 7px;
+    }
+    .title_kira {
+        color: var(--Darkblue);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .description_kira {
+        margin-top: 5px;
+        color: var(--Grey400);
+        font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+   
